@@ -6,6 +6,11 @@
 }
 
 * {
+    margin: 0;
+    padding: 0;
+}
+
+body {
     font-family: 'EliceDigitalBaeum';
     background-color: #333;
     color: #fff;
@@ -18,14 +23,6 @@ a {
     text-decoration: none;
 }
 
-button {
-    color: #9fccff;
-    border: #fff 1px solid;
-    width: 100px;
-    margin: 2em;
-    cursor: pointer;
-}
-
 h1 {
     text-align: center;
 }
@@ -33,24 +30,14 @@ h1 {
 
 hr {
     border: 0;
-    margin: 2em auto;
 }
 
-#white {
-    border: #fff dashed 1px;
-}
-
-#hide {
-    color: #333;
-    text-align: center;
-}
-
-#footer {
+footer {
     text-align: center;
     color: #e3c1ff;
     margin: 2em;
 }
 
-td {
+details {
     width: 430px;
 }
