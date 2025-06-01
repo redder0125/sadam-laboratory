@@ -1,4 +1,4 @@
-@font-face {
+7@font-face {
     font-family: 'EliceDigitalBaeum';
     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_elice@1.0/EliceDigitalBaeum.woff2') format('woff2');
     font-weight: normal;
@@ -10,11 +10,29 @@
     padding: 0;
 }
 
+@media (orientation: portrait) {
+    body {
+        max-width: 360px;
+    }
+    .card-arrange {
+      display: block;
+    }
+}
+
+@media (orientation: landscape) {
+    body {
+        max-width: 860px;
+    }
+
+    .card-arrange {
+       display: inline-block;
+    }
+}
+
 body {
     font-family: 'EliceDigitalBaeum';
     background-color: #333;
     color: #f5f5f5;
-    max-width: 860px;
     margin: auto;
 }
 
@@ -39,7 +57,7 @@ footer {
 }
 
 details {
-    width: 430px;
+    max-width: 430px;
 }
 
 .bg1 {
@@ -56,16 +74,4 @@ details {
 
 .underbg {
     background-color: #444;
-}
-
-@media (orientation: portrait) {
-    .card-arrange {
-      /* width: 100%; */
-    }
-}
-
-@media (orientation: landscape) {
-    .card-arrange {
-       display: inline-block;
-    }
 }
