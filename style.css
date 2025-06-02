@@ -1,4 +1,4 @@
-7@font-face {
+@font-face {
     font-family: 'EliceDigitalBaeum';
     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_elice@1.0/EliceDigitalBaeum.woff2') format('woff2');
     font-weight: normal;
@@ -11,29 +11,47 @@
 }
 
 @media (orientation: portrait) {
-    body {
+    .card-arrange div {
+        display: block;
+        max-width: inherit;
+    }
+
+    header, .card-list {
         max-width: 360px;
+        margin: 0 auto;
+
     }
-    .card-arrange {
-      display: block;
+
+    .header-link {
+        text-align: center;
     }
+
 }
 
 @media (orientation: landscape) {
-    body {
-        max-width: 860px;
+    .card-arrange div {
+        display: inline-block;
+        justify-content: space-between;
+        width: 50%;
+        max-width: 416px;
+        padding: 6px;
+        vertical-align: top;
     }
 
-    .card-arrange {
-       display: inline-block;
+    header, .card-list {
+        max-width: 860px;
+        margin: 0 auto;
+    }
+
+    .header-link {
+        text-align: right;
     }
 }
 
 body {
-    font-family: 'EliceDigitalBaeum';
-    background-color: #333;
+    font-family: 'EliceDigitalBaeum', sans-serif;
+    background-color: #444;
     color: #f5f5f5;
-    margin: auto;
 }
 
 a {
@@ -41,8 +59,17 @@ a {
     text-decoration: none;
 }
 
-h1 {
+h1{
     text-align: center;
+    padding-bottom: 1em;
+}
+
+header p {
+    text-align: center;
+}
+
+h2 {
+    padding-bottom: 1em;
 }
 
 
@@ -50,28 +77,47 @@ hr {
     border: 0;
 }
 
-footer {
-    text-align: center;
-    color: #e3c1ff;
-    margin: 2em;
+summary {
+    padding-bottom: 6px;
 }
 
-details {
-    max-width: 430px;
+details p {
+    padding: 0 16px;
+    padding-bottom: 6px;
+    color: #ccc;
+}
+
+footer {
+    margin: 0 auto;
+    padding: 2em;
+    text-align: center;
+    color: #ccc;
 }
 
 .bg1 {
+    padding: 48px;
     background-color: #444;
-    border-top-left-radius: 16px;
-    border-bottom-right-radius: 16px;
+    border-top-left-radius: 32px;
+    border-bottom-right-radius: 32px;
 }
 
 .bg2 {
+    padding: 48px;
     background-color: #333;
-    border-top-left-radius: 16px;
-    border-bottom-right-radius: 16px;
+    border-top-left-radius: 32px;
+    border-bottom-right-radius: 32px;
 }
 
-.underbg {
+.bg-header {
+    padding: 48px;
+    background-color: #333;
+    border-bottom-right-radius: 32px;
+}
+
+.underbg1 {
+    background-color: #333;
+}
+
+.underbg2 {
     background-color: #444;
 }
